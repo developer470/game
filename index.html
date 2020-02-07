@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<title>game</title>
-<meta name="idea" content"for fun"/>
-</head>
-
-<body>
-<center>
-<div id="outer">
-<h1>game</h1>
-<div id="inner">
-<h2 id="points">points: 0</h2>
-<button onclick="btnClick()">click</button>
-</div>
-</div>
-</center>
-</body>
-
-<script>
-var p = 0;
-function btnClick() {
-p += 1;
-document.getElementById("points").InnerHTML = "points: " + p;
-}
-</script>
-
+  
+  <head>
+    <title>game</title>
+    <meta name="idea" content"for fun"/>
+  </head>
+  
+  <body>
+    <center>
+      <div id="outer">
+        <h1>game</h1>
+        <div id="inner">
+          <h2 id="points">points: 0</h2>
+          <button onclick="btnClick()">click</button>
+        </div>
+      </div>
+    </center>
+  </body>
+  
+  <style>
+    * {
+      color: #ffffff;
+    }
+    
+    body {
+      background: #000000;
+    }
+    
+    #outer {
+      background: #202020;
+    }
+    
+    #inner {
+      background: #404040;
+    }
+    
+    button {
+      background: #606060;
+      border: none;
+      padding: 4px 2px;
+      margins: 4px 2px;
+    }
+    
+    button:hover {
+      background: #808080;
+    }
+  </style>
+  
+  <script>
+    var p = 0;
+    
+    function btnClick() {
+      p += 1;
+      document.getElementById("points").InnerHTML = "points: " + p;
+    }
+  </script>
+  
 </html>
