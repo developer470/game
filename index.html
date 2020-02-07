@@ -28,6 +28,11 @@
       background: #000000;
     }
     
+    div {
+      padding: 50px;
+      margin: 20px;
+    }
+    
     #outer {
       background: #202020;
     }
@@ -47,8 +52,8 @@
     button {
       background: #606060;
       border: none;
-      padding: 4px 2px;
-      margins: 4px 2px;
+      padding: 6px 4px;
+      margin: 6px 4px;
       font-size: 16px;
     }
     
@@ -62,7 +67,7 @@
     
     function btnClick() {
       p = p + 1;
-      document.getElementById("points").InnerHTML = "points: " + p;
+      document.getElementById("points").innerHTML = "points: " + p;
     }
   </script>
   
