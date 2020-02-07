@@ -21,6 +21,7 @@
   <style>
     * {
       color: #ffffff;
+      font-family: ariel;
     }
     
     body {
@@ -31,8 +32,16 @@
       background: #202020;
     }
     
+    h1 {
+      font-size: 20px;
+    }
+    
     #inner {
       background: #404040;
+    }
+    
+    h2 {
+      font-size: 18px;
     }
     
     button {
@@ -40,6 +49,7 @@
       border: none;
       padding: 4px 2px;
       margins: 4px 2px;
+      font-size: 16px;
     }
     
     button:hover {
@@ -51,7 +61,7 @@
     var p = 0;
     
     function btnClick() {
-      p += 1;
+      p = p + 1;
       document.getElementById("points").InnerHTML = "points: " + p;
     }
   </script>
